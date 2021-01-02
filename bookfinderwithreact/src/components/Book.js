@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Book = (props) => {
   const BookTitle = props.data.volumeInfo.title;
@@ -37,9 +38,12 @@ const Book = (props) => {
             </span>
           </div>
           <div className="card-action">
-            <a href="#!" style={{ color: "black" }}>
+            <Link
+              to={{ pathname: "/book/" + props.data.id, bookId: props.data.id }}
+              style={{ color: "black" }}
+            >
               See More!!!
-            </a>
+            </Link>
           </div>
         </div>
       </div>

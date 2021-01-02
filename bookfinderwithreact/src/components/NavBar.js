@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a href="#!" className="brand-logo" style={{ marginLeft: 20 }}>
+          <Link to="/" className="brand-logo" style={{ marginLeft: 20 }}>
             Book Finder
-          </a>
+          </Link>
           <ul
             id="nav-mobile"
             className="right hide-on-med-and-down"
