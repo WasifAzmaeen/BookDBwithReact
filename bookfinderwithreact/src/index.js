@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import BookDetails from "./components/BookDetails";
 import NavBar from "./components/NavBar";
-import { BrowserRouter, Link, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>

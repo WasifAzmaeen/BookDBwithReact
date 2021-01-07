@@ -12,8 +12,8 @@ const BookDetails = (props) => {
 
   return (
     <div>
-      <div className="row" style={{ marginLeft: "50%" }}>
-        <div className="col s12 m7">
+      <div className="row">
+        <div className="col s12 m3" style={{ marginLeft: "33%" }}>
           <div className="card">
             <div className="card-image">
               {currentBookImage == undefined || null ? (
@@ -34,7 +34,10 @@ const BookDetails = (props) => {
               <b>{currentBook.title}</b>
             </div>
             <div className="card-content">
-              <b>{currentBook.authors}</b>
+              <b> Authors of the Book : {currentBook.authors}</b>
+            </div>
+            <div className="card-content">
+              <b> Published Date : {currentBook.publishedDate}</b>
             </div>
             <div className="card-action">
               <Link to="/">Go to Home Page!</Link>
